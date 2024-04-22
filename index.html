@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+        <div class="object"></div>
+        <div class="design" id="design"></div>
+           
+
+       <!-- <img src="tumbler2.png" alt="img"  class="image-main"> 
+ <img src="img.jpg" alt="image-design" class="image-design2">
+            <img src="img.jpg" alt="image-design" class="image-design">
+       -->     
+        </div>
+        <div class="right">
+            <div class="form-input">
+                <label for="img" class="input-label">Seleccione la imagen</label>
+               <input type="file" name="img" id="img" accept="image/*" class="input-text" required/>  
+             
+            </div>
+            <div>
+                <picture>
+                   <img  alt="img" id="preview-image" class="preview-image"> 
+                </picture></div>
+                <div>
+                    <button id="btnGrabar">iniciar grabacion</button>
+                  <!--  <button id="btnDetenerGrabar">detener grabacion</button>-->
+                </div>
+        </div>
+        
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

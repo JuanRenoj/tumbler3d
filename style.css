@@ -1,0 +1,213 @@
+
+.backgound{
+    position: relative;
+      
+      transform-style: preserve-3d;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.object{
+    position: absolute;
+    width: 170px;
+    height: 500px;
+    top:65px;
+    left: 225px;
+border-radius: 5px 5px 10px 10px;
+   background-image: url(./tumbler4.png);
+   background-size: cover;
+   box-shadow: inset 0 0 20px #0000006e,0 0 40px #1d1d1d6e;
+
+   background-repeat: repeat-x;
+
+   animation: spindesign 80s linear infinite;
+}
+/* with image
+.desing{
+    position: absolute;
+    width: 250px;
+    height: 380px;
+    top:190px;
+    left: 110px;
+ 
+    overflow: hidden;
+
+}*/
+.design{
+    position: absolute;
+    width: 170px;
+    height: 463px;
+    top:95px;
+    left: 225px;
+    border-radius: 3px 3px 5px 5px;
+   background-image: url(./img.jpg);
+   background-size: cover;
+ 
+
+   background-repeat: repeat-x;
+   box-shadow: inset 0 0 20px #0000006e,0 0 40px #1d1d1d6e;
+   animation: spindesign 80s linear infinite;
+}
+@keyframes spindesign {
+0%{
+    background-position: 0 0;
+}
+100%{
+    background-position: -5143px 0;
+}
+}
+@keyframes spintumbler {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -170px 0;
+    }
+    
+}
+.image-design{
+   height: 100%;
+   width: 400px;
+ position: absolute;
+right: 125px;
+animation: scrollimg;
+
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+  
+}
+.image-design2{
+    height: 100%;
+    width: 400px;
+    left: 125px;
+ position: absolute;
+animation: scrollimg2;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+animation-delay: 0s;
+ animation-duration: 10s;
+
+ }
+@keyframes spin {
+    from{
+        transform: rotateY(0deg);
+
+
+    }
+    to{
+        transform: rotateY(-360deg);
+
+   
+    }
+
+    
+}
+
+@keyframes scrollimg {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-250px);
+
+    }
+
+    
+}
+@keyframes scrollimg2 {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-250px);
+
+    }
+
+    
+}
+
+.form-input{
+    height: 65px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.input-text{
+    height: 30px;
+    border-radius: 9px;
+    border: 2px solid #d4d4d4;
+    padding-left: 5px;
+    font-size: 1rem;
+    margin: 0px 8px;
+}
+.input-text:focus{  
+    outline: none;
+    border: 2px solid var(--focus);
+    box-shadow: 0px 0px 9px var(--shadow-focus);
+}
+
+.input-label{
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.image-main{
+    width: 600px;
+    height: 610px;
+
+    animation: spindesign 80s linear infinite;
+}
+
+.input-group{
+    border-radius: 9px;
+    height: 50px;
+ padding: 2px;
+    position: relative;
+}
+
+.input-group-label{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 30px;
+  width: 50px;
+    padding-left: 5px;
+    font-size: 1rem;
+}
+.input-group-text{
+    height: 30px;
+    background: transparent;
+    width: 92%;
+    border-radius: 9px;
+    border: 2px solid #d4d4d4;
+    padding-left: 35px;
+    font-size: 1rem;
+}
+.input-group-text:focus{  
+    outline: none;
+    border: 2px solid var(--focus);
+    box-shadow: 0px 0px 9px var(--shadow-focus);
+}
+input[type=file]::-webkit-file-upload-button{
+    background-color: rgb(103, 167, 240);
+        border: none;
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+    }
+    .preview-image{
+        height: 100px;
+        width: 100px;
+    }
