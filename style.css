@@ -1,29 +1,36 @@
 
 .backgound{
     position: relative;
-      
-      transform-style: preserve-3d;
+
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
 }
 .container{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+ 
     margin: 0;
     padding: 0;
-    display: flex;
+   display:  grid;
+   gap: 1rem;
+   grid-template-columns: repeat(auto-fill, minmax(min(100%, 500px),1fr));
 }
 .left{
-    width: 50%;
+
+ height: 600px;
 }
 .right{
-    width: 50%;
+
+   height: 600px;
 }
 .object{
     position: absolute;
     width: 170px;
     height: 500px;
     top:65px;
-    left: 225px;
+    left: 10%;
 border-radius: 5px 5px 10px 10px;
    background-image: url(./tumbler4.png);
    background-size: cover;
@@ -49,7 +56,7 @@ border-radius: 5px 5px 10px 10px;
     width: 170px;
     height: 463px;
     top:95px;
-    left: 225px;
+    left: 10%;
     border-radius: 3px 3px 5px 5px;
    background-image: url(./img.jpg);
    background-size: cover;

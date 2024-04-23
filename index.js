@@ -2,8 +2,10 @@ const design=document.getElementById("design");
 document.getElementById("img").addEventListener("change",e=>{
     console.log(e.target.files[0])
     let image=e.target.files[0]
+    let newImage=new Image()
     if(e.target.files.length > 0){
       var src = URL.createObjectURL(e.target.files[0]);
+      console.log(image.width)
       var preview = document.getElementById("preview-image");
       preview.src = src;
       console.log(src)
