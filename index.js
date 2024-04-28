@@ -17,7 +17,7 @@ document.getElementById("img").addEventListener("change",e=>{
   })
 
 
-
+/*
   const bntGrabar=document.getElementById("btnGrabar");
    bntGrabar?.addEventListener("click",async()=>{
     const media= await navigator.mediaDevices.getDisplayMedia({
@@ -39,7 +39,7 @@ document.getElementById("img").addEventListener("change",e=>{
         link.download="captura.webm";
         link.click()
     })
-   })
+   })*/
    /*
    const bntDetenerGrabar=document.getElementById("btnDetenerGrabar");
    bntDetenerGrabar.addEventListener("click",async()=>{
