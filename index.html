@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+   
 </head>
 <body>
+    <h1>Racconn Print</h1>
+
     <div class="container">
         <div class="left">
-        <div class="object"></div>
+          <!--    <canvas id="canvaTumbler" class="canvaTumbler"></canvas>
+            <canvas id="overCanvaTumbler" class="overCanvaTumbler"></canvas>-->
+      <div class="object"></div> 
         <div class="design" id="design"></div>
            
 
@@ -19,22 +24,38 @@
        -->     
         </div>
         <div class="right">
-            <div class="form-input">
+            <p>Tienes una imagen favorita y te gustaría ver como queda en un vaso tumbler, ahora lo puedes hacer con un solo clic,
+                 hace tu pedido con la seguridad que obténdras un gran producto</p>
+            <div class="form-input"
                 <label for="img" class="input-label">Seleccione la imagen</label>
                <input type="file" name="img" id="img" accept="image/*" class="input-text" required/>  
              
             </div>
             <div>
-                <picture>
+                <canvas   id="downLayer" class="downLayer"></canvas>
+                <canvas   id="cvImage" class="cvImage"></canvas>
+               <!-- <picture>
                    <img  alt="img" id="preview-image" class="preview-image"> 
-                </picture></div>
-                <div>
+                </picture>-->
+            </div>
+            
+           
+                </div>
+                  <div class=" autor">
+                     <p>autor: @juan_renoj 
+                     </p>
+                     <p>all rights reserved, 2024
+                    </p>
                     <!--   <button id="btnGrabar">iniciar grabacion</button>
                  <button id="btnDetenerGrabar">detener grabacion</button>-->
                 </div>
+                <div>
         </div>
-        
+         
     </div>
+
+
     <script src="./index.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

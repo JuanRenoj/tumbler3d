@@ -1,16 +1,18 @@
 
-.backgound{
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-}
+:root {
+    --width: -1080px;
+    --color-primary: #ffffff;
+    }
 body{
     overflow-x: hidden;
-    background-color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;;
 }
 .container{
     width: 100vw;
     height: 100vh;
- 
+    background-color: var(--color-primary);
     margin: 0;
     padding: 0;
    display:  grid;
@@ -18,12 +20,11 @@ body{
    grid-template-columns: repeat(auto-fill, minmax(min(100%, 500px),1fr));
 }
 .left{
-
- height: 600px;
+width: 450px;
 }
 .right{
-
-   height: 600px;
+position: relative;
+width: 450px;
 }
 .object{
     position: absolute;
@@ -38,40 +39,30 @@ border-radius: 5px 5px 10px 10px;
 
    background-repeat: repeat-x;
 
-   animation: spindesign 80s linear infinite;
+   animation: spindesign 30s linear infinite;
 }
-/* with image
-.desing{
-    position: absolute;
-    width: 250px;
-    height: 380px;
-    top:190px;
-    left: 110px;
- 
-    overflow: hidden;
 
-}*/
 .design{
     position: absolute;
     width: 170px;
     height: 463px;
     top:95px;
     left: 10%;
-    border-radius: 3px 3px 5px 5px;
-   background-image: url(./img.jpg);
+    border-radius: 2px;
+   /*background-image: url(./img.jpg);*/
    background-size: cover;
  
 
    background-repeat: repeat-x;
    box-shadow: inset 0 0 20px #0000006e,0 0 40px #1d1d1d6e;
-   animation: spindesign 80s linear infinite;
+   animation: spindesign 30s linear infinite;
 }
 @keyframes spindesign {
 0%{
     background-position: 0 0;
 }
 100%{
-    background-position: -5143px 0;
+    background-position:  var(--width) 0;
 }
 }
 @keyframes spintumbler {
@@ -148,6 +139,7 @@ animation-delay: 0s;
 .form-input{
     height: 65px;
     margin: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -196,7 +188,7 @@ animation-delay: 0s;
 .input-group-text{
     height: 30px;
     background: transparent;
-    width: 92%;
+    width: 75%;
     border-radius: 9px;
     border: 2px solid #d4d4d4;
     padding-left: 35px;
@@ -217,4 +209,60 @@ input[type=file]::-webkit-file-upload-button{
     .preview-image{
         height: 100px;
         width: 100px;
+    }
+
+    .downLayer{
+        width: 450px;
+        height: 300px;
+        border: 1px solid #000000;
+        position: absolute;
+        touch-action: manipulation;
+        user-select: none;
+      background-image: url(./alfa.jpg);
+        cursor: default;
+        
+
+    }
+    .cvImage{
+        width: 450px;
+        height: 300px;
+        border: 1px solid #000000;
+      
+        position: absolute;
+        touch-action: manipulation;
+        user-select: none;
+        cursor: default;
+        
+
+    }
+    .canvaTumbler{
+        width: 450px;
+        height: 600px;
+
+        position: absolute;
+        touch-action: manipulation;
+        user-select: none;
+        cursor: default;
+        
+
+    }
+    .overCanvaTumbler{
+        width: 450px;
+        height: 450px;
+
+        top: 38px;
+        position: absolute;
+        touch-action: manipulation;
+        user-select: none;
+        cursor: default;
+        
+
+    }
+
+    .autor{
+        position: absolute;
+        bottom: -20px;
+      
+        text-align: center;
+        width: 100%;
     }
